@@ -1,0 +1,100 @@
+nav.navbar{
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+.navbar a.navbar-brand,
+.navbar a.navbar-brand:hover{
+	font-family: Agency FB;
+	font-weight: bold;
+	color: #eee;
+}
+
+td a.text-white{
+	text-decoration: none !important;
+}
+td a.text-white:hover{
+	text-decoration: underline !important;
+}
+
+form .row .add .form-control{
+	max-width: 80%;
+}
+
+form .row div.submit{
+	margin-right: 20% !important;
+	text-align: right;
+}
+
+form .add .select-form{
+	width: 100%;
+}
+										/*tablet*/
+@media only screen and (max-width: calc(1200px - 1px)){
+	form .row .add .form-control{
+		max-width: 100%;
+	}	
+}
+
+@media only screen and (max-width: calc(992px - 1px)){
+	form .row div.submit{
+		text-align: left !important;
+	}
+}
+
+
+/*read.php*/
+
+img.read-img{
+	position: absolute;
+	right: 120px;
+	box-shadow: 3px 4px 8px rgba(0,0,0,.5);
+	width: 250px;
+}
+
+div.read-container{
+	padding-right: 250px;
+	margin-top: 3rem;
+}
+
+div.read-container .row p{
+	font-size: 18px;
+}
+div.read-container .row p.head{
+	font-weight: bold;
+}
+
+			/*tablet*/
+@media only screen and (max-width: calc(992px - 1px)){
+	img.read-img{
+		position: static;
+		display: block;
+		margin: 0 auto;
+	}
+	div.read-container{
+		padding-right: 0;
+		margin-top: 3rem;
+	}
+	.read-h2 {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: calc(460px - 1px)){
+	.read-h2{
+		font-size: 25px;
+	}
+	div.read-container .row p{
+		font-size: 18px;
+	}
+}
+
+
+/*update.php*/
+
+.container .diubah,
+.container .foto,
+.container #batal-ganti,
+.update .select-diubah{
+	display: none;
+}
